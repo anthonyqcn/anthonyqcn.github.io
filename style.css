@@ -42,19 +42,27 @@ a {
 	width: 50%;
 }
 
+.assignments {
+	display: flex;
+	justify-content: space-around;
+}
+
 .assignment {
 	font-size: 12px;
 	line-height: 24px;
 	font-family: 'helvetica', 'arial', 'sans';
 	padding: 20px 20px 20px 30px;
 	width: 250px;
-	height: 350px;
+	height: 300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	float: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
 }
 
-.assignments {
-	display: flex;
-	justify-content: space-around;
+.assignment:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .assignment a {
@@ -63,8 +71,8 @@ a {
 }
 
 .assignment a:hover {
-	background: #f06;
-	color: #f06;
+	background: #4b2e83;
+	color: #4b2e83;
 	text-decoration: none;
 }
 
