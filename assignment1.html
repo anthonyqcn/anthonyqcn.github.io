@@ -4,22 +4,61 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>Anthony Nguyen's HCDE 439 Physical Computing Page!</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-
+        <link href="a1.css" media="screen" rel="stylesheet" type="text/css" />
     </head> 
     <body> 
 
         <div class="header">
-            <h1>Example Student's Assignment 1!</h1>
+            <h1>Anthony Nguyen's Assignment 1!</h1>
             <p>
-            <img src="red-panda.jpg" width=400></a>
+            <img src="circuitvideo.gif" width=400>
             </p>
             <p>
-            Here is all the documentation for assignment 1!
+                Here's my circuit! (Note: I actually ran into a problem with uploading my code so although my setup should theoretically work, it doesn't actually display properly.)
+            </p>
+            <img src="circuit.jpg" width=400>
+            <p>
+                This is the circuit before turning it on.
+            </p>
+            <img class="smh" src="schematic.jpg" width=400>
+            <p>
+                This is the schematic that I drew for the circuit, as well as my calculations for how I decided on the resistance to use.
+            </p>
+            <p>
+                Finally, here's my code snippet for this assignment:
+                <pre>
+                    <code>
+// the setup function runs once when you press reset or power the board
+void setup() {
+    // initialize digital pins 13, 12, and 11 as outputs.
+    pinMode(13, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(11, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+    digitalWrite(13, HIGH);   // turn the LED on that is connected to pin 13 (HIGH is the voltage level)
+    delay(750);                       // wait for 3 quarters of a second
+    digitalWrite(12, HIGH);   // turn the LED on that is connected to pin 12 (HIGH is the voltage level)
+    delay(100);                       // wait for a tenth of a second
+    digitalWrite(11, HIGH);   // turn the LED on that is connected to pin 11 (HIGH is the voltage level)
+    digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+    delay(1000);                       // wait for a second
+    digitalWrite(12, LOW);    // turn the LED off by making the voltage LOW
+    delay(500);                         // wait for half a second
+    digitalWrite(11, LOW);    // turn the LED off by making the voltage LOW
+    delay(1500);                       // wait for a second and a half
+}
+                    </code>
+                </pre>
             </p>
         </div>
-        
+        <div>
+        </div>
+
     </body>
 </html>
