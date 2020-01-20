@@ -1,0 +1,23 @@
+.schematic-rotate {
+	transform: rotate(90deg);
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+pre code {
+	display: block;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.snippets {
+	height: 100%;
+	width: 100%;
+}
+
+.code-snips {
+	margin-top: 900px;
+}
